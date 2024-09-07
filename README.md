@@ -82,10 +82,13 @@ export KERAS_BACKEND="jax"
 In Colab, you can do:
 
 ```python
-import os
+import os  # Imagine this as getting access to the "settings" of your computer.
+
+# Think of 'KERAS_BACKEND' as a switch that decides which engine your car (Keras) should use.
+# Here, we are choosing to use the "JAX engine" for our deep learning car (Keras).
 os.environ["KERAS_BACKEND"] = "jax"
 
-import keras
+import keras  # Now, we bring in the car (Keras) which will use the JAX engine we chose earlier.
 ```
 
 **Note:** The backend must be configured before importing `keras`, and the backend cannot be changed after 
